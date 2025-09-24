@@ -1,0 +1,27 @@
+# Question 16 (a)
+2 # Examination Number:
+3
+4 def get_grade(result):
+5 grade = "Unsuccessful"
+6
+7 if result >= 80:
+8 grade = "Distinction"
+9 elif result >= 65:
+10 grade = "Upper Merit"
+11
+12 return grade
+13
+14 # Calculate and display the mean of a list of results
+15 results = [39,32,62,88,51,62,64,81,77] # Initialise the list
+16 N = len(results) # Initialise N to the number of results
+17 total = 0 # Initialise the running total to 0
+18
+19 # Loop N times
+20 for i in range(N):
+21 total = total + results[i] # Running total
+22
+23 # Divide by the total number of results to give the mean
+24 arithmetic_mean = total/9
+25
+26 # Display the answer
+27 print("The mean percentage mark is", arithmetic_mean)
